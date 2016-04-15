@@ -8,10 +8,10 @@
 </head>
 <body>
 	<div class="heading centered">
-		<h1>{% block intro %}Welcome to Hangman{% endblock %}</h1>
+		<h1>{% block intro %}Bem vindo{% endblock %}</h1>
 		{% block game%}
 		<form action="{{ url_for('game') }}" method="POST">
-		<label>Player 1 please choose a word:</label>
+		<label>Jogador 1, escolha uma palavra:</label>
 		<input type="password" name="word" value="" autofocus>
 		<input type="submit" value="Submit!">
 		</form>

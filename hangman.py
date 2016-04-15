@@ -26,7 +26,7 @@ def index():
 def game():
 	session['word'] = request.form['word']
 	word = session['word']
-	session['reveal'] = list('X'*len(word))
+	session['reveal'] = list('- '*len(word))
 	reveal = session['reveal']
 	session['score'] = 0
 	if request.method == 'POST':
